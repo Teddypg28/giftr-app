@@ -1,101 +1,140 @@
-import Image from "next/image";
+'use client'
+
+import { IoFilterSharp } from "react-icons/io5";
+
+import './index.css'
+import giftData from './data'
+
+import { useState } from "react";
+import Link from "next/link";
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+  // filter state object
+  const [filterState, setFilterState] = useState({ageGroup: '', occasion: '', interests: ['']})
+
+  // choice component
+  const Choice = ({title, value, type, borderColor} : {title: string, value: string, type: string, borderColor: string}) => {
+
+    const isChecked = filterState.ageGroup === value || filterState.interests.includes(value) || filterState.occasion === value
+    const onClick = () => {
+      if (type === "ageGroup") {
+        if (filterState.ageGroup === value) {
+          return setFilterState(prevFilterState => {return {...prevFilterState, ageGroup: ''}})
+        } else {
+          return setFilterState(prevFilterState => {return {...prevFilterState, ageGroup: value}})
+        }
+      } 
+      if (type === "occasion") {
+        if (filterState.occasion === value) {
+          return setFilterState(prevFilterState => {return {...prevFilterState, occasion: ''}})
+        } else {
+          return setFilterState(prevFilterState => {return {...prevFilterState, occasion: value}})
+        }
+      } 
+      if (type === "interest") {
+        if (filterState.interests.includes(value)) {
+          const updatedInterests = filterState.interests.filter(interest => interest !== value)
+          return setFilterState(prevFilterState => {return {...prevFilterState, interests: updatedInterests}})
+        } else {
+          return setFilterState(prevFilterState => {return {...prevFilterState, interests: [...prevFilterState.interests, value]}})
+        }
+      }
+    }
+
+    return (
+      <div 
+      onClick={onClick}
+      className="w-fit cursor-pointer" 
+      style={{border: `2px solid ${borderColor}`, color: isChecked && borderColor === 'white' ? 'black' : 'white', backgroundColor: isChecked ? borderColor : undefined, borderRadius: '25px', padding: '5px 15px'}}>
+        {title}
+      </div>
+    )
+  }
+
+  // age group filtering choices and markup
+  const ageGroups = [
+    {title: '18-24 years old', value: '18-24'}, 
+    {title: '25-34 years old', value: '25-34'}, 
+    {title: '35-44 years old', value: '35-44'}, 
+    {title: '45-54 years old', value: '45-54'}, 
+    {title: '55+ years old', value: '55+'}
+  ]
+  const ageGroupFilterChoicesMarkup = ageGroups.map((group, index) => <Choice key={index} title={group.title} value={group.value} type="ageGroup" borderColor="#5ab9ff" />)
+
+  // occasion filtering choices and markup
+  const occasions = [
+    {title: 'Birthday', value: 'birthday'}, 
+    {title: 'Christmas', value: 'christmas'}, 
+    {title: 'Anniversary', value: 'anniversary'}, 
+    {title: "Father's Day", value: 'father'}, 
+    {title: "Valentine's Day", value: 'valentine'},
+    {title: 'Graduation', value: 'graduation'}
+  ]
+  const occasionFilterChoicesMarkup = occasions.map((occasion, index) => <Choice key={index} title={occasion.title} value={occasion.value} type="occasion" borderColor="white" />)
+
+  // interest filtering choices and markup
+  const interests = [
+    {title: 'Tech & Gadgets', value: 'tech'}, 
+    {title: 'Fitness & Sports', value: 'fitness'},
+    {title: 'Automotive', value: 'automotive'},
+    {title: 'Food & Drink', value: 'food'},
+    {title: 'Home Improvement & DIY', value: 'home'},
+    {title: 'Health & Wellness', value: 'health'},
+    {title: 'Gaming', value: 'gaming'},
+    {title: 'Travel & Outdoors', value: 'travel'},
+    {title: 'Luxury & Collectibles', value: 'luxury'}
+]
+  const interestFilterChoicesMarkup = interests.map((interest, index) => { 
+    return <Choice key={index} title={interest.title} value={interest.value} type="interest" borderColor="#5ab9ff" /> 
+  })
+
+  // product cards markup
+  const productCardMarkup = giftData.map((gift, index) => {
+    return (
+      <div key={index} className="productCard">
+        <div style={{width: '100%'}}>
+          <img draggable={false} src={gift.image} className="productImage" />
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        <div className="productName">{gift.name}</div>
+        <div className="productDescription">{gift.description}</div>
+        <Link className="checkPriceBtn" href={gift.link} target="_blank">Check Amazon Price</Link>
+      </div>
+    )
+  })
+
+  return (
+    <div>
+      <img draggable={false} alt="logo" src={'/logo.png'} className="logo w-fit" />
+      <div className="filterContainer">
+        <div className="flex items-center justify-center gap-4 mt-4">
+          <h1 className="text-center text-4xl font-bold">Filters</h1>
+          <IoFilterSharp color="white" size={40} />
+        </div>
+        <div className="mt-5 flex flex-col gap-7 relative">
+          <div>
+            <h3 className="font-bold">Age Group:</h3>
+            <div className="flex items-start justify-center flex-wrap gap-2 mt-2">
+              {ageGroupFilterChoicesMarkup}
+            </div>
+          </div>
+          <div>
+            <h3 className="font-bold">Occasion:</h3>
+            <div className="flex items-start justify-center flex-wrap gap-2 mt-2">
+              {occasionFilterChoicesMarkup}
+            </div>
+          </div>
+          <div>
+            <h3 className="font-bold">Interests:</h3>
+            <div className="flex items-start justify-center flex-wrap gap-2 mt-2">
+              {interestFilterChoicesMarkup}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="productCardsContainer">
+        {productCardMarkup}
+      </div>
     </div>
   );
 }
