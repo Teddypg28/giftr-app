@@ -1,41 +1,117 @@
 export default [
     {
+        name: 'Tushy Bidet',
+        ageGroups: ['35-44', '45-54', '55+'],
+        interests: ['home', 'tech'],
+        occasions: ['christmas', 'birthday'],
+        description: 'A sleek, modern bidet that upgrades any bathroom—perfect for the guy who appreciates self-care.',
+        link: 'http://www.amazon.com/dp/B07H5TBZJT/ref=nosim?tag=mrgiftr-20',
+        image: 'https://m.media-amazon.com/images/I/61yiJVjgTVL._AC_SX425_.jpg',
+    },
+    {
+        name: '15.6inch Portable Monitor',
+        ageGroups: ['18-24', '25-34'],
+        interests: ['tech', 'gaming'],
+        occasions: ['christmas', 'birthday'],
+        description: 'A sleek, portable monitor for work or gaming on the go—great for tech-savvy guys.',
+        link: 'http://www.amazon.com/dp/B0BNWWF32B/ref=nosim?tag=mrgiftr-20',
+        image: 'https://m.media-amazon.com/images/I/71WdRXWl8fL._AC_SY450_.jpg',
+    },
+    {
+        name: 'Raycon Wireless Earbuds',
+        ageGroups: ['18-24', '25-34', '35-44', '45-54', '55+'],
+        interests: ['tech', 'music', 'fitness'],
+        occasions: ['christmas', 'birthday', 'father'],
+        description: 'Stylish wireless earbuds with amazing sound for music, podcasts, or workouts.',
+        link: 'http://www.amazon.com/dp/B0CTD56NJ2/ref=nosim?tag=mrgiftr-20',
+        image: 'https://m.media-amazon.com/images/I/61Sbw7sQWjL._AC_SY355_.jpg',
+    },
+    {
+        name: '43inch Smart Fire TV',
+        ageGroups: ['18-24', '25-34', '35-44', '45-54', '55+'],
+        interests: ['tech'],
+        occasions: ['christmas', 'birthday', 'father'],
+        description: 'An all-in-one entertainment solution for movie nights, sports, and streaming.',
+        link: 'http://www.amazon.com/dp/B0CMDJ8TK3/ref=nosim?tag=mrgiftr-20',
+        image: 'https://m.media-amazon.com/images/I/81Q0HLbeLbL._AC_SX450_.jpg',
+    },
+    {
+        name: 'Karaoke Machine - 2 Wireless Mics',
+        ageGroups: ['18-24', '25-34', '35-44', '45-54', '55+'],
+        interests: ['music', 'tech'],
+        occasions: ['christmas', 'birthday'],
+        description: 'A karaoke machine for the guy who loves parties, music, and fun nights with friends.',
+        link: 'http://www.amazon.com/dp/B0C4T4M97X/ref=nosim?tag=mrgiftr-20',
+        image: 'https://m.media-amazon.com/images/I/71FCmTxrxOL._AC_SX425_.jpg',
+    },
+    {
+        name: '3-in-1 Wireless Microphone',
+        ageGroups: ['18-24', '25-34', '35-44'],
+        interests: ['tech'],
+        occasions: ['christmas', 'birthday', 'father'],
+        description: 'A versatile mic for music, podcasts, and speeches—great for the creative guy in your life.',
+        link: 'http://www.amazon.com/dp/B0CWTNLPB4/ref=nosim?tag=mrgiftr-20',
+        image: 'https://m.media-amazon.com/images/I/61zO6e-rheL._AC_SX425_.jpg',
+    },
+    {
+        name: '4-in-1 Adjustable Dumbbell Set',
+        ageGroups: ['18-24', '25-34', '35-44', '45-54', '55+'],
+        interests: ['fitness'],
+        occasions: ['christmas', 'birthday'],
+        description: 'Compact and versatile dumbbells—perfect for home workouts or strength training.',
+        link: 'http://www.amazon.com/dp/B0C2TCNLQQ/ref=nosim?tag=mrgiftr-20',
+        image: 'https://m.media-amazon.com/images/I/71BE37ZZfLL._AC_SX425_.jpg',
+    },
+    {
+        name: '20-in-1 Push-Up Bar',
+        ageGroups: ['18-24', '25-34', '35-44', '45-54', '55+'],
+        interests: ['fitness'],
+        occasions: ['christmas', 'birthday', 'father'],
+        description: 'Strength training made easy with this versatile and functional push-up bar.',
+        link: 'http://www.amazon.com/dp/B0B73XM8ZB/ref=nosim?tag=mrgiftr-20',
+        image: 'https://m.media-amazon.com/images/I/71UKoSRSfZL._AC_SX425_.jpg',
+    },
+    {
+        name: 'Portable Generator',
+        ageGroups: ['35-44', '45-54', '55+'],
+        interests: ['outdoors'],
+        occasions: ['christmas', 'birthday', 'father'],
+        description: 'Essential backup power for emergencies, camping trips, or outdoor adventures.',
+        link: 'http://www.amazon.com/dp/B082TMBYR6/ref=nosim?tag=mrgiftr-20',
+        image: 'https://m.media-amazon.com/images/I/81Fq5thlrnS._AC_SY450_.jpg',
+    },
+    {
       name: 'Mr. Stream Vintage Flannel',
       description: "A stylish, versatile choice that's warm, cozy, and perfect for casual layering—every guy needs a classic flannel in their wardrobe.",
+      ageGroups: ['34-44', '45-54', '55+'],
+      interests: ['outdoors'],
+      occasions: ['christmas', 'birthday'],
       link: 'http://www.amazon.com/dp/B077D8J9PD/ref=nosim?tag=mrgiftr-20',
       image: 'https://m.media-amazon.com/images/I/81r2AjxisiL._AC_SY445_.jpg',
-      video: null
     },
     {
       name: 'Heated Vest',
+      ageGroups: ['34-44', '45-54', '55+'],
+      interests: ['outdoors'],
+      occasions: ['christmas'],
       description: "Keeps him warm and comfortable in cooler weather with three temperature settings; ideal for outdoor sports or everyday wear.",
       link: 'http://www.amazon.com/dp/B0CCL65XVB/ref=nosim?tag=mrgiftr-20',
       image: 'https://m.media-amazon.com/images/I/71pbN+bd1WL._AC_SX342_.jpg',
-      video: null
     },
     {
       name: 'Gaming Floor Rocker Chair',
+      ageGroups: ['18-24'],
+      interests: ['gaming'],
+      occasions: ['christmas', 'birthday'],
       description: "A must-have for gamers—perfect for long gaming sessions with ergonomic support and unbeatable comfort.",
       link: 'http://www.amazon.com/dp/B089B17Z21/ref=nosim?tag=mrgiftr-20',
       image: 'https://m.media-amazon.com/images/I/71bT9UBFlOL._AC_SX425_.jpg',
-      video: null
-    },
-    {
-      name: 'Kitchen Knife Set',
-      description: "Great for any guy who loves cooking or barbecuing; durable, sharp, and essential for any home chef.",
-      link: 'http://www.amazon.com/dp/B0DHX4KL9F/ref=nosim?tag=mrgiftr-20',
-      image: 'https://m.media-amazon.com/images/I/710n+Yx799L._AC_SY450_.jpg',
-      video: null
-    },
-    {
-      name: 'Luxury Watch Box',
-      description: "A sleek, elegant way to organize and store watches—a practical and stylish gift for any watch enthusiast.",
-      link: 'http://www.amazon.com/dp/B09CLHSQC9/ref=nosim?tag=mrgiftr-20',
-      image: 'https://m.media-amazon.com/images/I/71xXs83Gf3L._AC_SX425_.jpg',
-      video: null
     },
     {
       name: 'LED Flame Outdoor Table Lamp',
+      ageGroups: ['34-44', '45-54', '55+'],
+      interests: ['outdoors', 'tech'],
+      occasions: ['christmas', 'birthday'],
       description: "Creates a cozy, romantic vibe for patios, decks, or living spaces—ideal for setting the mood at home or outdoors.",
       link: 'http://www.amazon.com/dp/B07QQNST7B/ref=nosim?tag=mrgiftr-20',
       image: 'https://m.media-amazon.com/images/I/710cuab124L._AC_SX425_.jpg',
@@ -43,87 +119,300 @@ export default [
     },
     {
       name: 'Massage Gun',
+      ageGroups: ['18-24', '25-34', '35-44'],
+      interests: ['tech', 'health'],
+      occasions: ['christmas', 'birthday'],
       description: "The ultimate recovery tool for athletes or anyone with an active lifestyle; relieves soreness and promotes relaxation.",
       link: 'http://www.amazon.com/dp/B085NTR26K/ref=nosim?tag=mrgiftr-20',
       image: 'https://m.media-amazon.com/images/I/61xFvMw5A4L._AC_SX425_.jpg',
-      video: null
     },
     {
       name: 'Hoverpen 2.0 Interstellar Edition',
+      ageGroups: ['18-24'],
+      interests: ['tech'],
+      occasions: ['christmas', 'birthday'],
       description: "A sleek, space-themed gadget that combines style, functionality, and a unique twist for any desk setup.",
       link: 'http://www.amazon.com/dp/B09DKXVWV4/ref=nosim?tag=mrgiftr-20',
       image: 'https://m.media-amazon.com/images/I/611vS3Ul-3L._AC_SY450_.jpg',
-      video: null
     },
     {
       name: 'Portable Waterproof Bluetooth Speaker',
+      ageGroups: ['18-24', '25-34'],
+      interests: ['outdoors', 'tech'],
+      occasions: ['christmas', 'birthday'],
       description: "A rugged, portable speaker for any outdoor adventure, beach trip, or casual hangout—great sound, everywhere.",
       link: 'http://www.amazon.com/dp/B09LLPSVBY/ref=nosim?tag=mrgiftr-20',
       image: 'https://m.media-amazon.com/images/I/81UVhXfnT9L._AC_SY355_.jpg',
-      video: null
     },
     {
       name: 'Monocular Telescope',
+      ageGroups: ['18-24', '25-34'],
+      interests: ['outdoors'],
+      occasions: ['christmas', 'birthday'],
       description: "Perfect for the outdoorsy guy or aspiring stargazer; compact, versatile, and ready for adventures or observations.",
       link: 'http://www.amazon.com/dp/B094CRHFMP/ref=nosim?tag=mrgiftr-20',
       image: 'https://m.media-amazon.com/images/I/71ws9E8QNxL._AC_SY355_.jpg',
-      video: null
     },
     {
       name: 'Flickering Outdoor Bluetooth Speaker',
+      ageGroups: ['35-44', '45-54'],
+      interests: ['outdoors'],
+      occasions: ['christmas', 'birthday'],
       description: "Combines great sound with a cool design, making it ideal for outdoor parties, camping, or cozy nights in the yard.",
       link: 'http://www.amazon.com/dp/B07W6SDVDN/ref=nosim?tag=mrgiftr-20',
       image: 'https://m.media-amazon.com/images/I/71GYNwFgt9L._AC_SX355_.jpg',
-      video: null
     },
     {
       name: 'Beginner Astronomical Telescope',
+      ageGroups: ['18-24'],
+      interests: ['outdoors'],
+      occasions: ['christmas', 'birthday'],
       description: "A thoughtful gift for aspiring stargazers or science lovers; a gateway to exploring the wonders of the night sky.",
       link: 'http://www.amazon.com/dp/B081RJ8DW1/ref=nosim?tag=mrgiftr-20',
       image: 'https://m.media-amazon.com/images/I/71cb2RCy+aL._AC_SY450_.jpg',
-      video: null
     },
     {
       name: 'Chirp Wheel Massage Roller',
+      ageGroups: ['35-44', '45-54', '55+'],
+      interests: ['fitness'],
+      occasions: ['christmas', 'birthday', 'father'],
       description: "A convenient way to relieve back pain, tension, and soreness—great for active guys or anyone with a busy lifestyle.",
       link: 'http://www.amazon.com/dp/B0BN56CNFH/ref=nosim?tag=mrgiftr-20',
       image: 'https://m.media-amazon.com/images/I/81r4JTHgyFL._AC_SX425_.jpg',
-      video: null
     },
     {
       name: 'Under Desk Elliptical',
+      ageGroups: ['45-54', '55+'],
+      interests: ['health'],
+      occasions: ['christmas', 'birthday'],
       description: "A smart fitness tool for busy professionals; lets him stay active while working from home or the office.",
       link: 'http://www.amazon.com/dp/B074F1S194/ref=nosim?tag=mrgiftr-20',
       image: 'https://m.media-amazon.com/images/I/61tFPHYDB4L._AC_SX425_.jpg',
-      video: null
     },
     {
       name: 'EKG Monitor - 6 Views of the Heart',
+      ageGroups: ['45-54', '55+'],
+      interests: ['health'],
+      occasions: ['christmas', 'birthday'],
       description: "A health-conscious gadget that offers peace of mind and promotes heart health tracking for fitness enthusiasts.",
       link: 'http://www.amazon.com/dp/B07RQW6SD5/ref=nosim?tag=mrgiftr-20',
       image: 'https://m.media-amazon.com/images/I/71DjAdFRYuL._AC_SX425_.jpg',
-      video: null
     },
     {
       name: 'One Click Tire Inflator',
-      description: "A must-have for every car owner; easy to use, reliable, and ensures he's prepared for emergencies on the road.",
+      ageGroups: ['35-44', '45-54', '55+'],
+      interests: ['automotive'],
+      occasions: ['christmas', 'birthday'],
+      description: "A must-have for every handyman; easy to use and reliable to make filling up his tired a lot less of a headache.",
       link: 'http://www.amazon.com/dp/B094DMH7ZM/ref=nosim?tag=mrgiftr-20',
       image: 'https://m.media-amazon.com/images/I/61ykKKO7+vL._AC_SY355_.jpg',
-      video: null
     },
     {
       name: 'Health Tracker Watch',
+      ageGroups: ['45-54', '55+'],
+      interests: ['health'],
+      occasions: ['christmas', 'birthday'],
       description: "Tracks steps, heart rate, and fitness goals—perfect for motivating him to stay active and health-conscious.",
       link: 'http://www.amazon.com/dp/B0DFFVPFCB/ref=nosim?tag=mrgiftr-20',
       image: 'https://m.media-amazon.com/images/I/71fQtDB6wjL._AC_SX425_.jpg',
-      video: null
     },
     {
       name: 'Temperature Control Smart Coffee Mug',
+      ageGroups: ['25-34', '35-44', '45-54', '55+'],
+      interests: ['tech'],
+      occasions: ['christmas', 'birthday'],
       description: "Keeps his coffee or tea at the perfect temperature for hours—great for busy mornings or long workdays.",
       link: 'http://www.amazon.com/dp/B07NQRM6ML/ref=nosim?tag=mrgiftr-20',
       image: 'https://m.media-amazon.com/images/I/51tXJGC0gQL._AC_SY450_.jpg',
-      video: null
+    },
+    {
+      name: 'Callaway 300 Laser Rangefinder',
+      ageGroups: ['18-24', '25-34', '35-44', '45-54', '55+'],
+      interests: ['golf'],
+      occasions: ['christmas', 'birthday', 'father'],
+      description: 'A must-have for golfers to accurately measure distances and choose the right clubs during play.',
+      link: 'http://www.amazon.com/dp/B01KP195PY/ref=nosim?tag=mrgiftr-20',
+      image: 'https://m.media-amazon.com/images/I/91bTAzdMHeL._AC_SX679_.jpg'
+    },
+    {
+      name: 'Portable Bluetooth Golf Cart Speaker',
+      ageGroups: ['18-24', '25-34', '35-44', '45-54', '55+'],
+      interests: ['golf'],
+      occasions: ['christmas', 'birthday', 'father'],
+      description: 'Enjoy music on the course with this Bluetooth speaker that connects instantly to your phone and attaches to your golf cart.',
+      link: 'http://www.amazon.com/dp/B08QHZMZW3/ref=nosim?tag=mrgiftr-20',
+      image: 'https://m.media-amazon.com/images/I/71faBKlUW4L._AC_SY355_.jpg'
+    },
+    {
+      name: 'Portable Golf Cart Speaker Mount',
+      ageGroups: ['18-24', '25-34', '35-44', '45-54', '55+'],
+      interests: ['golf'],
+      occasions: ['christmas', 'birthday', 'father'],
+      description: 'A convenient mount that keeps his Bluetooth speaker safely in place on his golf cart while he plays.',
+      link: 'http://www.amazon.com/dp/B07X3C67CL/ref=nosim?tag=mrgiftr-20',
+      image: 'https://m.media-amazon.com/images/I/81t1l5hU00L._AC_SX425_.jpg'
+    },
+    {
+      name: 'Callaway Golf Ball Retriever',
+      ageGroups: ['18-24', '25-34', '35-44', '45-54', '55+'],
+      interests: ['golf'],
+      occasions: ['christmas', 'birthday', 'father'],
+      description: 'Effortlessly pick up stray golf balls with this easy-to-use retriever that extends up to 6 feet with the push of a button.',
+      link: 'http://www.amazon.com/dp/B0012U27KS/ref=nosim?tag=mrgiftr-20',
+      image: 'https://m.media-amazon.com/images/I/71BGWQcSs8L._AC_SY550_.jpg'
+    },
+    {
+      name: 'Garmin GPS Golf Yardage Watch',
+      ageGroups: ['18-24', '25-34', '35-44', '45-54', '55+'],
+      interests: ['golf'],
+      occasions: ['christmas', 'birthday', 'father'],
+      description: 'Stay on top of every shot with this GPS golf watch that provides distances to key areas on the course and alerts to hazards.',
+      link: 'http://www.amazon.com/dp/B07C2QHTTZ/ref=nosim?tag=mrgiftr-20',
+      image: 'https://m.media-amazon.com/images/I/61v5OxrSe8L._AC_SX425_.jpg'
+    },
+    {
+      name: '3D Golf Ball Shot Glass Set',
+      ageGroups: ['25-34', '35-44', '45-54', '55+'],
+      interests: ['golf'],
+      occasions: ['christmas', 'birthday', 'father'],
+      description: 'A fun and functional set of 4 shot glasses designed like golf balls—perfect for any golf enthusiast or celebration.',
+      link: 'http://www.amazon.com/dp/B0C1TY4PJ8/ref=nosim?tag=mrgiftr-20',
+      image: 'https://m.media-amazon.com/images/I/719jEDX0KgL._AC_SX425_.jpg'
+    },
+    {
+      name: 'BenShot Pint Glass with Real Golf Ball',
+      ageGroups: ['25-34', '35-44', '45-54', '55+'],
+      interests: ['golf'],
+      occasions: ['christmas', 'birthday', 'father'],
+      description: 'Handcrafted pint glass featuring a real golf ball embedded inside—ideal for enjoying his favorite beverage in style.',
+      link: 'http://www.amazon.com/dp/B07PC4ZTGB/ref=nosim?tag=mrgiftr-20',
+      image: 'https://m.media-amazon.com/images/I/61+qt7-xZSS._SY500_.jpg'
+    },
+    {
+      name: 'Titleist Pro V1 Golf Balls',
+      ageGroups: ['18-24', '25-34', '35-44', '45-54', '55+'],
+      interests: ['golf'],
+      occasions: ['christmas', 'birthday', 'father'],
+      description: 'The most trusted and preferred golf balls for every player, regardless of experience or skill level.',
+      link: 'http://www.amazon.com/dp/B0BPF2D5P9/ref=nosim?tag=mrgiftr-20',
+      image: 'https://m.media-amazon.com/images/I/713NkhbOnRL._AC_SX425_.jpg'
+    },
+    {
+      name: 'Rechargeable Clip On Golf Cart Fan',
+      ageGroups: ['18-24', '25-34', '35-44', '45-54', '55+'],
+      interests: ['golf'],
+      occasions: ['christmas', 'birthday', 'father'],
+      description: 'Stay cool with this rechargeable fan that easily clips to your golf cart, providing a steady breeze on warm days.',
+      link: 'http://www.amazon.com/dp/B08866RDYK/ref=nosim?tag=mrgiftr-20',
+      image: 'https://m.media-amazon.com/images/I/71Z+rTcXwBL._AC_SX466_.jpg'
+    },
+    {
+      name: "The 'Below Par' Whiskey Gift Box Set",
+      ageGroups: ['25-34', '35-44', '45-54', '55+'],
+      interests: ['golf'],
+      occasions: ['christmas', 'birthday', 'father'],
+      description: 'This unique whiskey gift box includes 2 premium glasses and stainless steel whiskey rocks styled as golf balls. It comes in a sleek wooden gift box.',
+      link: 'http://www.amazon.com/dp/B0B41NSSPW/ref=nosim?tag=mrgiftr-20',
+      image: 'https://m.media-amazon.com/images/I/91+meoeiIWL._AC_SX522_.jpg'
+    },
+    {
+      name: 'Golf Chipping Net Training Aid',
+      ageGroups: ['18-24', '25-34', '35-44', '45-54', '55+'],
+      interests: ['golf'],
+      occasions: ['christmas', 'birthday', 'father'],
+      description: 'Perfect for practicing short game skills in the basement or backyard, this set includes a chipping net, practice mat, and balls.',
+      link: 'http://www.amazon.com/dp/B08D89W9LS/ref=nosim?tag=mrgiftr-20',
+      image: 'https://m.media-amazon.com/images/I/913+uJRZRlL._AC_SX425_.jpg'
+    },
+    {
+      name: "Backyard Cornhole Game Set - Golfer's Edition",
+      ageGroups: ['18-24', '25-34', '35-44', '45-54', '55+'],
+      interests: ['golf'],
+      occasions: ['christmas', 'birthday', 'father'],
+      description: 'Designed with golf enthusiasts in mind, this backyard cornhole set combines fun and practice. Perfect for summer outings or even winter game nights.',
+      link: 'http://www.amazon.com/dp/B08BTS9DDM/ref=nosim?tag=mrgiftr-20',
+      image: 'https://m.media-amazon.com/images/I/81KPMWT0waL._AC_SX425_.jpg'
+    },
+    {
+      name: 'Sukeen Chilling Towels',
+      ageGroups: ['35-44', '45-54', '55+'],
+      interests: ['golf', 'fitness'],
+      occasions: ['christmas', 'birthday', 'father'],
+      description: 'Perfect for cooling off during hot summer golf rounds or intense workouts, these soft, breathable towels provide a refreshing and comfortable experience.',
+      link: 'http://www.amazon.com/dp/B07D32GR48/ref=nosim?tag=mrgiftr-20',
+      image: 'https://m.media-amazon.com/images/I/919UP6cqEuL._AC_SX425_.jpg'
+    },
+    {
+      name: 'Fore! Card Game for the Course',
+      ageGroups: ['18-24', '25-34', '35-44', '45-54', '55+'],
+      interests: ['golf'],
+      occasions: ['christmas', 'birthday', 'father'],
+      description: 'This entertaining card game is perfect for any golf enthusiast’s next round. Featuring a variety of unique challenges, it adds fun competition to every game.',
+      link: 'http://www.amazon.com/dp/B08PMLZ1H3/ref=nosim?tag=mrgiftr-20',
+      image: 'https://m.media-amazon.com/images/I/915oIUffeYL._AC_SX425_.jpg'
+    },
+    {
+      name: '2 Layered Waterproof Golf Trunk Organizer',
+      ageGroups: ['18-24', '25-34', '35-44', '45-54', '55+'],
+      interests: ['golf'],
+      occasions: ['christmas', 'birthday', 'father'],
+      description: 'Keep golf gear and accessories organized and clutter-free with this waterproof trunk organizer. Perfect for storing clothing, balls, and other essentials.',
+      link: 'http://www.amazon.com/dp/B09PZZ1QRM/ref=nosim?tag=mrgiftr-20',
+      image: 'https://m.media-amazon.com/images/I/81tcQ57CFRL._AC_SX425_.jpg'
+    },
+    {
+      name: 'Personalized Golf Balls',
+      ageGroups: ['18-24', '25-34', '35-44', '45-54', '55+'],
+      interests: ['golf'],
+      occasions: ['christmas', 'birthday', 'father'],
+      description: 'Monogrammed and customized golf balls make an unforgettable, personal gift. A thoughtful way to add a unique touch to every round.',
+      link: 'http://www.amazon.com/dp/B07CH2ZDS7/ref=nosim?tag=mrgiftr-20',
+      image: 'https://m.media-amazon.com/images/I/41QUzmw5SkL._AC_SX425_.jpg'
+    },
+    {
+      name: 'PERFECT PRACTICE Putting Mat',
+      ageGroups: ['18-24', '25-34', '35-44', '45-54', '55+'],
+      interests: ['golf'],
+      occasions: ['christmas', 'birthday', 'father'],
+      description: 'Endorsed by PGA pro Dustin Johnson, this putting mat is ideal for golfers looking to perfect their short game from the comfort of their home.',
+      link: 'http://www.amazon.com/dp/B07YQ7935B/ref=nosim?tag=mrgiftr-20',
+      image: 'https://m.media-amazon.com/images/I/91CusAbuU5L._AC_SX425_.jpg'
+    },
+    {
+      name: 'Custom Personalized Golf Towel',
+      ageGroups: ['18-24', '25-34', '35-44', '45-54', '55+'],
+      interests: ['golf'],
+      occasions: ['christmas', 'birthday', 'father'],
+      description: 'Add a personal touch with this embroidered golf towel. A thoughtful, custom accessory that pairs wonderfully with personalized golf balls.',
+      link: 'http://www.amazon.com/dp/B097NP8DSG/ref=nosim?tag=mrgiftr-20',
+      image: 'https://m.media-amazon.com/images/I/81F9UXjwmzL._AC_SX425_.jpg'
+    },
+    {
+      name: 'DESERT FOX GOLF Phone Caddy',
+      ageGroups: ['18-24', '25-34', '35-44', '45-54', '55+'],
+      interests: ['golf'],
+      occasions: ['christmas', 'birthday', 'father'],
+      description: 'Keep his phone easily accessible and secure with this phone caddy. Perfect for preventing his device from bouncing in golf cart storage areas.',
+      link: 'http://www.amazon.com/dp/B09QB88LKP/ref=nosim?tag=mrgiftr-20',
+      image: 'https://m.media-amazon.com/images/I/71b-ge18ETL._AC_SX679_.jpg'
+    },
+    {
+      name: 'Portable Golf Cart Heater',
+      ageGroups: ['18-24', '25-34', '35-44', '45-54', '55+'],
+      interests: ['golf'],
+      occasions: ['christmas', 'birthday', 'father'],
+      description: 'When the weather gets chilly, this portable golf cart heater keeps him warm and comfortable on the course.',
+      link: 'http://www.amazon.com/dp/B011TRLWH2/ref=nosim?tag=mrgiftr-20',
+      image: 'https://m.media-amazon.com/images/I/51m4Lb5QEWL._AC_SY450_.jpg'
+    },
+    {
+      name: 'Premium Attachable Golf Ball Washer',
+      ageGroups: ['18-24', '25-34', '35-44', '45-54', '55+'],
+      interests: ['golf'],
+      occasions: ['christmas', 'birthday', 'father'],
+      description: 'This premium ball washer attaches to his golf bag and makes cleaning golf balls easy with its built-in cleaning solution.',
+      link: 'http://www.amazon.com/dp/B08TX7Q9JT/ref=nosim?tag=mrgiftr-20',
+      image: 'https://m.media-amazon.com/images/I/71YQ3K68toL._AC_SX425_.jpg',
     }
 ]
   

@@ -11,7 +11,7 @@ import Link from "next/link";
 export default function Home() {
 
   // filter state object
-  const [filterState, setFilterState] = useState({ageGroup: '', occasion: '', interests: ['']})
+  const [filterState, setFilterState] = useState<{ageGroup: string, occasion: string, interests: string[]}>({ageGroup: '', occasion: '', interests: []})
 
   // choice component
   const Choice = ({title, value, type, borderColor} : {title: string, value: string, type: string, borderColor: string}) => {
@@ -68,7 +68,6 @@ export default function Home() {
     {title: 'Christmas', value: 'christmas'}, 
     {title: 'Anniversary', value: 'anniversary'}, 
     {title: "Father's Day", value: 'father'}, 
-    {title: "Valentine's Day", value: 'valentine'},
     {title: 'Graduation', value: 'graduation'}
   ]
   const occasionFilterChoicesMarkup = occasions.map((occasion, index) => <Choice key={index} title={occasion.title} value={occasion.value} type="occasion" borderColor="white" />)
@@ -76,21 +75,26 @@ export default function Home() {
   // interest filtering choices and markup
   const interests = [
     {title: 'Tech & Gadgets', value: 'tech'}, 
-    {title: 'Fitness & Sports', value: 'fitness'},
-    {title: 'Automotive', value: 'automotive'},
-    {title: 'Food & Drink', value: 'food'},
+    {title: 'Fitness', value: 'fitness'},
+    {title: 'Golf', value: 'golf'},
+    {title: 'Music', value: 'music'},
     {title: 'Home Improvement & DIY', value: 'home'},
     {title: 'Health & Wellness', value: 'health'},
     {title: 'Gaming', value: 'gaming'},
-    {title: 'Travel & Outdoors', value: 'travel'},
-    {title: 'Luxury & Collectibles', value: 'luxury'}
+    {title: 'Travel & Outdoors', value: 'outdoors'},
 ]
   const interestFilterChoicesMarkup = interests.map((interest, index) => { 
     return <Choice key={index} title={interest.title} value={interest.value} type="interest" borderColor="#5ab9ff" /> 
   })
 
+  // filtered gift data
+  const filteredGiftData = giftData
+    .filter(gift => gift.interests?.some((interest) => filterState.interests.includes(interest) || filterState.interests.length === 0))
+    .filter(gift => gift.occasions?.some((occasion) => filterState.occasion === occasion || filterState.occasion === ''))
+    .filter(gift => gift.ageGroups?.some((ageGroup) => filterState.ageGroup === ageGroup || filterState.ageGroup === ''))
+
   // product cards markup
-  const productCardMarkup = giftData.map((gift, index) => {
+  const productCardMarkup = filteredGiftData.map((gift, index) => {
     return (
       <div key={index} className="productCard">
         <div style={{width: '100%'}}>
@@ -105,7 +109,10 @@ export default function Home() {
 
   return (
     <div>
-      <img draggable={false} alt="logo" src={'/logo.png'} className="logo w-fit" />
+      <IoFilterSharp className="mobileFilterBtn" size={35} color="#062842" />
+      <div className="logoContainer">
+        <img draggable={false} alt="logo" src={'/logo.png'} className="logo w-fit" />
+      </div>
       <div className="filterContainer">
         <div className="flex items-center justify-center gap-4 mt-4">
           <h1 className="text-center text-4xl font-bold">Filters</h1>
@@ -132,9 +139,13 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="productCardsContainer">
-        {productCardMarkup}
-      </div>
+      {filteredGiftData.length > 0 ? 
+        <div className="productCardsContainer">
+          {productCardMarkup}
+        </div>
+      :
+        <div className="noMatchingGiftsMessage">Sorry, no gifts match this criteria at this time</div>
+      }
     </div>
   );
 }
