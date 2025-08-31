@@ -454,7 +454,7 @@ export default [
       ageGroups: ['45-54', '55+'],
       interests: ['tech'],
       occasions: ['christmas', 'birthday', 'father'],
-      description: "This mini fridge can hold dozens of his favorite sodas, beers, and wines. It even includes custom temperature functionality.",
+      description: "This mini fridge can hold dozens of his favorite beverages. It even includes custom temperature functionality.",
       link: 'http://www.amazon.com/dp/B07F9RNZPB/ref=nosim?tag=mrgiftr-20',
       image: 'https://m.media-amazon.com/images/I/71Wgd+AYD3L._AC_SX522_.jpg'
     },

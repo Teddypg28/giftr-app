@@ -86,7 +86,7 @@ export default function Home() {
     {title: 'Travel & Outdoors', value: 'outdoors'},
 ]
   const interestFilterChoicesMarkup = interests.map((interest, index) => { 
-    return <Choice key={index} title={interest.title} value={interest.value} type="interest" borderColor="#5ab9ff" /> 
+    return <Choice key={index} title={interest.title} value={interest.value} type="interest" borderColor="#22a5f1" /> 
   })
 
   // filtered gift data
@@ -133,7 +133,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <IoFilterSharp className="mobileFilterBtn cursor-pointer" onClick={() => setIsModalOpen(true)} size={35} color="#062842" />
+      <IoFilterSharp className="mobileFilterBtn cursor-pointer" onClick={() => setIsModalOpen(true)} size={35} color="white" />
       <div className="logoContainer">
         <img draggable={false} alt="logo" src={'/logo.png'} className="logo w-fit" />
       </div>

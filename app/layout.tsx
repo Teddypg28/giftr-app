@@ -14,7 +14,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Mr. Giftr - Gift Finder for Guys",
+  title: "Giftr - Gift Finder for Guys",
   description: "Gift shopping for guys made easy!",
 };
 
