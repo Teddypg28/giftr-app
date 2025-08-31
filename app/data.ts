@@ -38,7 +38,7 @@ export default [
     {
         name: 'Karaoke Machine - 2 Wireless Mics',
         ageGroups: ['18-24', '25-34', '35-44', '45-54', '55+'],
-        interests: ['music', 'tech'],
+        interests: ['tech'],
         occasions: ['christmas', 'birthday'],
         description: 'A karaoke machine for the guy who loves parties, music, and fun nights with friends.',
         link: 'http://www.amazon.com/dp/B0C4T4M97X/ref=nosim?tag=mrgiftr-20',
@@ -108,16 +108,6 @@ export default [
       image: 'https://m.media-amazon.com/images/I/71bT9UBFlOL._AC_SX425_.jpg',
     },
     {
-      name: 'LED Flame Outdoor Table Lamp',
-      ageGroups: ['34-44', '45-54', '55+'],
-      interests: ['outdoors', 'tech'],
-      occasions: ['christmas', 'birthday'],
-      description: "Creates a cozy, romantic vibe for patios, decks, or living spaces—ideal for setting the mood at home or outdoors.",
-      link: 'http://www.amazon.com/dp/B07QQNST7B/ref=nosim?tag=mrgiftr-20',
-      image: 'https://m.media-amazon.com/images/I/710cuab124L._AC_SX425_.jpg',
-      video: 'https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/v2/4b3b5dd9-fa73-577e-94ba-1321f4104891/ShortForm-Generic-480p-16-9-1409173089793-rpcbe5.mp4'
-    },
-    {
       name: 'Massage Gun',
       ageGroups: ['18-24', '25-34', '35-44'],
       interests: ['tech', 'health'],
@@ -163,7 +153,7 @@ export default [
       image: 'https://m.media-amazon.com/images/I/71GYNwFgt9L._AC_SX355_.jpg',
     },
     {
-      name: 'Beginner Astronomical Telescope',
+      name: 'Astronomical Telescope',
       ageGroups: ['18-24'],
       interests: ['outdoors'],
       occasions: ['christmas', 'birthday'],
@@ -413,6 +403,141 @@ export default [
       description: 'This premium ball washer attaches to his golf bag and makes cleaning golf balls easy with its built-in cleaning solution.',
       link: 'http://www.amazon.com/dp/B08TX7Q9JT/ref=nosim?tag=mrgiftr-20',
       image: 'https://m.media-amazon.com/images/I/71YQ3K68toL._AC_SX425_.jpg',
-    }
+    },
+    {
+      name: "Gillete Blade Refills - 12 Month's Supply",
+      ageGroups: ['18-24', '25-34', '35-44', '45-54', '55+'],
+      interests: ['health'],
+      occasions: ['christmas', 'birthday', 'father'],
+      description: 'Blade refills can be a hassle to deal with, so he would be very pleased to see this 12 month supply of Gillette razor cartridges, the best in the game.',
+      link: 'http://www.amazon.com/dp/B07NTVPK21/ref=nosim?tag=mrgiftr-20',
+      image: 'https://m.media-amazon.com/images/I/61ySq-MRLhL._SY355_.jpg'
+    },
+    {
+      name: 'Glance LED Real-Time Smart Clock',
+      ageGroups: ['18-24', '25-34', '35-44', '45-54', '55+'],
+      interests: ['tech'],
+      occasions: ['christmas', 'birthday', 'father'],
+      description: 'This is an impressive gift that he can use to display the real-time score of his favorite sports team, the news, or even the price of a stock he is tracking.',
+      link: 'http://www.amazon.com/dp/B0BSXQ931B/ref=nosim?tag=mrgiftr-20',
+      image: 'https://m.media-amazon.com/images/I/918+Ge0qYxL._AC_SX425_.jpg'
+    },
+    {
+      name: 'Everlasting Comfort Original Seat Cushion',
+      ageGroups: ['45-54', '55+'],
+      interests: ['health', 'gaming'],
+      occasions: ['christmas', 'birthday', 'father'],
+      description: "Whether it's for his gaming chair or office chair, his tailbone and lower back will definitely thank him later.",
+      link: 'http://www.amazon.com/dp/B01EBDV9BU/ref=nosim?tag=mrgiftr-20',
+      image: 'https://m.media-amazon.com/images/I/81-lNZMy8lL._AC_SY355_.jpg'
+    },
+    {
+      name: 'Everlasting Comfort Original Lumbar Support Pillow',
+      ageGroups: ['45-54', '55+'],
+      interests: ['health', 'gaming'],
+      occasions: ['christmas', 'birthday', 'father'],
+      description: 'This will transform his gaming or office chair for maximum support and comfort, reducing poor posture and back pain.',
+      link: 'http://www.amazon.com/dp/B01IJNJAZ0/ref=nosim?tag=mrgiftr-20',
+      image: 'https://m.media-amazon.com/images/I/81IFu0xLPQL._AC_SX425_.jpg'
+    },
+    {
+      name: 'Wireless Smartphone Charging Stand Set',
+      ageGroups: ['18-24', '25-34', '35-44', '45-54', '55+'],
+      interests: ['tech'],
+      occasions: ['christmas', 'birthday', 'father'],
+      description: 'The perfect addition to his office and bedside, these wireless charging stands will make his life a lot easier.',
+      link: 'http://www.amazon.com/dp/B07WFB6QMV/ref=nosim?tag=mrgiftr-20',
+      image: 'https://m.media-amazon.com/images/I/51FSkxPo14L._AC_SY450_.jpg'
+    },
+    {
+      name: '12 Bottle 48 Can Mini Fridge',
+      ageGroups: ['45-54', '55+'],
+      interests: ['tech'],
+      occasions: ['christmas', 'birthday', 'father'],
+      description: "This mini fridge can hold dozens of his favorite sodas, beers, and wines. It even includes custom temperature functionality.",
+      link: 'http://www.amazon.com/dp/B07F9RNZPB/ref=nosim?tag=mrgiftr-20',
+      image: 'https://m.media-amazon.com/images/I/71Wgd+AYD3L._AC_SX522_.jpg'
+    },
+    {
+      name: 'Echo Dot (5th Gen)',
+      ageGroups: ['45-54', '55+'],
+      interests: ['tech'],
+      occasions: ['christmas', 'birthday', 'father'],
+      description: 'The perfect addition to his office space, allowing him to listen to his favorite tunes or ask tons of questions to Alexa - all through voice commands.',
+      link: 'http://www.amazon.com/dp/B09B8VN8YQ/ref=nosim?tag=mrgiftr-20',
+      image: 'https://m.media-amazon.com/images/I/81vA2pfZCtL._AC_SY450_.jpg'
+    },
+    {
+      name: 'Personalized Engraved Pocket Knife',
+      ageGroups: ['18-24', '25-34', '35-44', '45-54', '55+'],
+      interests: ['outdoors'],
+      occasions: ['christmas', 'birthday', 'father'],
+      description: 'This pocket knife comes with an engraved name on it inside of a cute gift box with a custom, engraved message of your choice.',
+      link: 'http://www.amazon.com/dp/B09TT3JFCJ/ref=nosim?tag=mrgiftr-20',
+      image: 'https://m.media-amazon.com/images/I/71LYEdKVnxL._AC_SX425_.jpg'
+    },
+    {
+      name: 'Earth Pak Waterproof Dry Bag',
+      ageGroups: ['25-34', '35-44', '45-54', '55+'],
+      interests: ['outdoors'],
+      occasions: ['christmas', 'birthday', 'father'],
+      description: 'This will keep all of his essential items safe and dry the next time he is out camping, hiking, or kayaking. It even floats if it were to fall in the water.',
+      link: 'http://www.amazon.com/dp/B06XCYF9F9/ref=nosim?tag=mrgiftr-20',
+      image: 'https://m.media-amazon.com/images/I/61Ha0FhD+bL._AC_SX425_.jpg'
+    },
+    {
+      name: 'The Firebowl - Deluxe Portable Fire Pit',
+      ageGroups: ['45-54', '55+'],
+      interests: ['outdoors'],
+      occasions: ['christmas', 'birthday', 'father'],
+      description: 'This smoke-free pit is the perfect gift for his camping adventures in areas where wood or charcoal fires are not allowed.',
+      link: 'http://www.amazon.com/dp/B00KY4S388/ref=nosim?tag=mrgiftr-20',
+      image: 'https://m.media-amazon.com/images/I/712jRne+n9L._AC_SY550_.jpg'
+    },
+    {
+      name: '4K Night Vision Binoculars with 32GB Memory Card',
+      ageGroups: ['18-24', '25-34', '35-44', '45-54', '55+'],
+      interests: ['outdoors'],
+      occasions: ['christmas', 'birthday', 'father'],
+      description: 'Change the way he camps, hikes, or hunts. It consists of a 3-inch screen to look through and can save both photos and videos of what he captures.',
+      link: 'http://www.amazon.com/dp/B0B12CD9YV/ref=nosim?tag=mrgiftr-20',
+      image: 'https://m.media-amazon.com/images/I/718VA2LT3HL._AC_SX425_.jpg'
+    },
+    {
+      name: 'Tactical Fishing Sling',
+      ageGroups: ['18-24', '25-34', '35-44', '45-54', '55+'],
+      interests: ['outdoors'],
+      occasions: ['christmas', 'birthday', 'father'],
+      description: 'Both lightweight and sturdy, this easy-to-pack tactical bag will become his new go-to when going out fishing.',
+      link: 'http://www.amazon.com/dp/B08X6H4F5N/ref=nosim?tag=mrgiftr-20',
+      image: 'https://m.media-amazon.com/images/I/81ZHxlhqK0L._AC_SX425_.jpg'
+    },
+     {
+      name: 'Premium Electric Protein Shaker Bottle',
+      ageGroups: ['18-24', '25-34', '35-44', '45-54'],
+      interests: ['fitness'],
+      occasions: ['christmas', 'birthday', 'father'],
+      description: "All he has to do is throw in the ingredients and let the bottle do the rest for a smooth, tasty shake.",
+      link: 'http://www.amazon.com/dp/B07QP13BJ9/ref=nosim?tag=mrgiftr-20',
+      image: 'https://m.media-amazon.com/images/I/51Dk3zEQGbL._AC_SX425_.jpg'
+    },
+    {
+      name: 'Power Tower Dip Station',
+      ageGroups: ['18-24', '25-34', '35-44', '45-54'],
+      interests: ['fitness'],
+      occasions: ['christmas', 'birthday', 'father'],
+      description: 'A popular home gym accessory, this power tower is a gift that he will instantly fall in love with. He will be able to do 5 different exercises using it.',
+      link: 'http://www.amazon.com/dp/B07SM8VJ6P/ref=nosim?tag=mrgiftr-20',
+      image: 'https://m.media-amazon.com/images/I/61PzvSVJtzS._AC_SX425_.jpg'
+    },
+    {
+      name: 'Cordless Mini Chainsaw',
+      ageGroups: ['35-44', '45-54', '55+'],
+      interests: ['outdoors'],
+      occasions: ['christmas', 'birthday', 'father'],
+      description: 'This is an extremely useful and easy-to-carry chainsaw that he can use when clearing trees or cutting wood without having to carry around big tools.',
+      link: 'http://www.amazon.com/dp/B092VSFBZS/ref=nosim?tag=mrgiftr-20',
+      image: 'https://m.media-amazon.com/images/I/71jH6kHQZiL._AC_SX425_.jpg',
+    },
 ]
   

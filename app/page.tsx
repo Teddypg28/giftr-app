@@ -1,6 +1,7 @@
 'use client'
 
 import { IoFilterSharp } from "react-icons/io5";
+import { IoIosCloseCircleOutline } from "react-icons/io";
 
 import './index.css'
 import giftData from './data'
@@ -9,6 +10,9 @@ import { useState } from "react";
 import Link from "next/link";
 
 export default function Home() {
+
+  // modal state
+  const [isModalOpen, setIsModalOpen] = useState(false)
 
   // filter state object
   const [filterState, setFilterState] = useState<{ageGroup: string, occasion: string, interests: string[]}>({ageGroup: '', occasion: '', interests: []})
@@ -66,9 +70,7 @@ export default function Home() {
   const occasions = [
     {title: 'Birthday', value: 'birthday'}, 
     {title: 'Christmas', value: 'christmas'}, 
-    {title: 'Anniversary', value: 'anniversary'}, 
-    {title: "Father's Day", value: 'father'}, 
-    {title: 'Graduation', value: 'graduation'}
+    {title: "Father's Day", value: 'father'}
   ]
   const occasionFilterChoicesMarkup = occasions.map((occasion, index) => <Choice key={index} title={occasion.title} value={occasion.value} type="occasion" borderColor="white" />)
 
@@ -109,7 +111,29 @@ export default function Home() {
 
   return (
     <div>
-      <IoFilterSharp className="mobileFilterBtn" size={35} color="#062842" />
+      <div>
+        <div className="modal" style={{display: isModalOpen ? 'block' : 'none'}}>
+          <IoIosCloseCircleOutline onClick={() => setIsModalOpen(false)} className="absolute right-5 text-3xl cursor-pointer" />
+          <h2 className="text-center font-bold text-2xl">Filter Options</h2>
+          <h3 className="font-bold mt-5">Age Group:</h3>
+          <div className="flex items-start justify-center flex-wrap gap-2 mt-2">
+            {ageGroupFilterChoicesMarkup}
+          </div>
+          <div className="mt-5">
+            <h3 className="font-bold">Occasion:</h3>
+            <div className="flex items-start justify-center flex-wrap gap-2 mt-2">
+              {occasionFilterChoicesMarkup}
+            </div>
+          </div>
+          <div className="mt-10">
+            <h3 className="font-bold">Interests:</h3>
+            <div className="flex items-start justify-center flex-wrap gap-2 mt-2">
+              {interestFilterChoicesMarkup}
+            </div>
+          </div>
+        </div>
+      </div>
+      <IoFilterSharp className="mobileFilterBtn cursor-pointer" onClick={() => setIsModalOpen(true)} size={35} color="#062842" />
       <div className="logoContainer">
         <img draggable={false} alt="logo" src={'/logo.png'} className="logo w-fit" />
       </div>
